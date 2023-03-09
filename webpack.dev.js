@@ -1,10 +1,11 @@
+// webpack.dev.js 파일은 Webpack 의 설정을 담고 있는 파일, mode dev 설정
 const path = require("path");
 module.exports = {
   // Webpack 의 모드를 설정
   mode: "development",
   // 엔트리 포인트는 Webpack 에게 번들링을 시작할 애플리케이션의 시작점을 지정해 줌
   entry: "./src/index.ts",
-  // webpack.config.js 파일 내의 Webpack 에게 해당 소스 맵을 추출해 최종 번들에 포함하라고 지시
+  // webpack.dev.js 파일 내의 Webpack 에게 해당 소스 맵을 추출해 최종 번들에 포함하라고 지시
   devtool: "inline-source-map",
   devServer: {
     static: {
